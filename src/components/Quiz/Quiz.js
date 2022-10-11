@@ -9,8 +9,9 @@ const Quiz = () => {
         <div className='App'>
             <h1 className='mt-10 font-bold text-3xl text-cyan-700'>Quiz Of {quiz.data.name}</h1>
             {
-            quiz.data.questions.map(questions => <Question
+            quiz.data.questions.map((questions,index) => <Question
             key={questions.id}
+            index={index}
             questions={questions}></Question>)
            }
            <Footer></Footer>
