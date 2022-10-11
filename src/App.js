@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './layouts/Main';
 import Stat from './components/Statistics/Statistics';
 import Statistics from './components/Statistics/Statistics';
+import Alert from './components/Alert/Alert';
 
 function App() {
   const router = createBrowserRouter([
@@ -32,6 +33,9 @@ function App() {
  
      ]
  
+    },
+    {path:'*',
+    element: <Alert></Alert>
     }
    ])
   return (
