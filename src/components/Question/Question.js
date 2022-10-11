@@ -9,7 +9,6 @@ const Question = ({questions,index}) => {
    
    const {question,correctAnswer,options} = questions;
    const [answer,setAnswer] = useState();
- 
     const message = () => toast(`${correctAnswer}`);
     const message1 = () => toast("Wow!!!Right Answer!");
     const message2 = () => toast("Shit!!!Wrong Answer!");
@@ -17,6 +16,7 @@ const Question = ({questions,index}) => {
         setAnswer(e.target.value)
         if(e.target.value === correctAnswer)
         {
+           
             message1();
             return;
         }
@@ -26,6 +26,7 @@ const Question = ({questions,index}) => {
         }
         
     }
+  
     let len = question.length - 4;
     const que = question.slice(3,len);
 
@@ -44,11 +45,8 @@ const Question = ({questions,index}) => {
                </div>)   
               
             }
-           
-           
             
             </div>
-            
             </div>
 
         </div>
