@@ -15,7 +15,7 @@ const Statistics = () => {
           <div className='mx-0 lg:mx-32 pl-0 lg:pl-96 mb-20 mt-9 text-center'>
             
           <BarChart
-          width={450}
+          width={420}
           height={350}
           data={data2}
           margin={{

@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee,faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { Link, useLoaderData } from 'react-router-dom';
-import Topic from '../Topic/Topic';
+
 
 const Topics = ({topic}) => {
    
