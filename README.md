@@ -4,7 +4,7 @@
  Live Demo: https://q-quiz.netlify.app/
 # Project Description
 Technologies:
-Tailwind CSS,JSX,JS,ReactJs,React-Router
+Tailwind CSS,JSX,JS,ReactJs,React-Router <br/>
 Features:
 1. Single Page Application website with react-router.
 2. This website is fully functional and fully responsive for users.
