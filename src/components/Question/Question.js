@@ -11,21 +11,31 @@ const Question = ({questions,index}) => {
    const [answer,setAnswer] = useState();
     const message = () => toast(`${correctAnswer}`);
     const message1 = () => toast("Wow!!!Right Answer!");
-    const message2 = () => toast("Shit!!!Wrong Answer!");
+    const message2 = () => toast("Shit !!! Your Answer is Wrong ! " + ` Correct Answer: ${correctAnswer}`);
+ 
+    
+ 
     const onChange = (e) =>{
-        setAnswer(e.target.value)
+        setAnswer(e.target.value);
         if(e.target.value === correctAnswer)
         {
-           
+         
             message1();
+            if(correctAnswer)
             return;
+          
+            
         }
         else{
             message2();
-            return;
+            if(!correctAnswer)
+           return;
         }
+    
+        
         
     }
+    
   
     let len = question.length - 4;
     const que = question.slice(3,len);
@@ -38,16 +48,20 @@ const Question = ({questions,index}) => {
                 <button onClick={message}><FontAwesomeIcon icon={faEyeSlash}></FontAwesomeIcon></button>
                 <ToastContainer/>
                 </div>
+               
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 mt-5'>
             {
                 options.map(op => <div><input type="radio" name="{op.id}" value={op} onChange={onChange}></input> {op}
-               
+              
                </div>)   
               
             }
             
+          
+            
             </div>
             </div>
+           
 
         </div>
     );
