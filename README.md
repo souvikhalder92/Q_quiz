@@ -3,12 +3,20 @@
 # Live Link:
  Live Demo: https://q-quiz.netlify.app/
 # Project Description
-Technologies:
-Tailwind CSS,JSX,JS,ReactJs,React-Router <br/>
-Features:
+## Technologies:
+1. Tailwind CSS
+2. JSX
+3. JS
+4. ReactJs
+5. React-Router
+6. Font Awsome
+7. React Toastify
+8. React Recharts
+## Features:
 1. Single Page Application website with react-router.
-2. This website is fully functional and fully responsive for users.
+2. This website is fully functional and fully responsive for user.
 3. Q-Quiz is online-based quiz website.User can practice their task in this website.
+4. User can see the statistical representation of the total number of quizzes for each topic in Bar-Chart.
 
 # Getting Started with Create React App
 
