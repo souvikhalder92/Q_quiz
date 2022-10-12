@@ -9,9 +9,9 @@ const Question = ({questions,index}) => {
    
    const {question,correctAnswer,options} = questions;
    const [answer,setAnswer] = useState();
-    const message = () => toast(`${correctAnswer}`);
+    const message = () => toast(`Correct Answer: ${correctAnswer}`);
     const message1 = () => toast("Wow!!!Right Answer!");
-    const message2 = () => toast("Shit !!! Your Answer is Wrong ! " + ` Correct Answer: ${correctAnswer}`);
+    const message2 = () => toast("Shit !!! Your Answer is Wrong !");
  
     
  
